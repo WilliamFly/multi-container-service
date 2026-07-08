@@ -9,6 +9,7 @@ services:
       - todo-network
 
   api:
+    image: ghcr.io/williamfly/multi-container-service:latest
     build: .
     container_name: todo-api
     restart: unless-stopped
